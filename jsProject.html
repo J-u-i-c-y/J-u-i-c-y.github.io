@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>PhoneShope</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+				<fieldset>
+				<span class="close">&times;</span>
+				<p>Выберите фото и введите данные</p>
+				<input id="setImage" type="file" name="photo" accept="image/*">
+				<input type="text" name="name" id="setName" placeholder="Модель и марка телефона">
+				<input type="text" name="country" id="setCountry" placeholder="Производитель">
+				<input type="text" name="year" id="setYear" placeholder="Дата выхода">
+				<input type="text" name="memory" id="setMemory" placeholder="Кол-во памяти">
+				<input type="text" name="camera" id="setCamera" placeholder="Камера">
+				<input type="text" name="price" id="setPrice" placeholder="Стоимость">
+				<button id="setButton"></button>
+		    	<button type="submit" id="setValue">Добавить</button>
+		    </fieldset>
+			
+		</div>	
+	</div>
+	<div class="wraper-style wraper-position">
+		<table id='list' class="table-phone table_blur">
+			<thead id="thead">
+				<tr>
+					<th>Внешний вид</th>
+					<th>Модель и марка телефона</th>
+					<th>Производитель</th>
+					<th>Дата выхода</th>
+					<th>Кол-во памяти</th>
+					<th>Камера</th>
+					<th>Стоимость</th>
+					<th>Доп.функции</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+			</tbody>
+		</table>
+		<div class="input">
+			<a class="button" id="addItem" href="#">Заполнить</a>
+			<a class="button" id="del" href="#">Очистить</a>
+			<a class="button" id="modal" href="#">Добавить</a>
+		</div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="DATA.js"></script>
+<script type="text/javascript" src="jsProject.js"></script>
+</html>
