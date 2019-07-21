@@ -1,5 +1,5 @@
 ## Project CSS
-[CSS](https://J-u-i-c-y.github.io/Project%20CSS/jsProject.html)
+[CSS](https://J-u-i-c-y.github.io/Project%20CSS/public/StPaulSchool.html)
 
 ## Project JS
 [Localstorage](https://J-u-i-c-y.github.io/JS%20prject/jsProject.html)
