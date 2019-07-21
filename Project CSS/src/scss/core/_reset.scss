@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+main {
+	position: relative;
+	display: block;
+}
+.clearfix {
+	clear: both;
+	display: table;
+	content: '';
+}
+input[type="checkbox"]{
+    	display: none;
+}
+.main-admissions h1 {
+    line-height: 1.11765;
+    font-family: "Copernicus", "Georgia", "Droid Serif", serif;
+    margin-bottom: 20px;
+    color: #c1a15d;
+}
+.main-info h1 {
+		font-size: 2.125rem;
+    line-height: 1.11765;
+    font-family: "Copernicus", "Georgia", "Droid Serif", serif;
+    margin-bottom: 20px;
+		color: #fff;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}

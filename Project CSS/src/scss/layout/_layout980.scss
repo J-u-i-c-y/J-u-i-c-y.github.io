@@ -1,0 +1,120 @@
+.search-box {
+	@media (min-width: 980px) {
+		top: 15px;
+		order: 2;
+		float: right;
+		width: 75%;
+	}
+}
+.search-box__btn:checked  + .search-box__input {
+    @media (min-width: 1050px) {
+	   	width: 92% !important;
+			border-right: none !important;
+    }
+}
+.nav-menu {
+	@media (min-width: 980px) {
+		display: block !important;
+		border: none !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		width: 70% !important;
+		float: right !important;
+		position: absolute !important;
+		right: 80px !important;
+	}
+}
+.main-content div {
+	@media (min-width: 980px) {
+		& h1 {
+			font-size: 4.2em;
+		}
+		& p {
+			font-size: 1.4em;
+		}
+		& .box-container .box {
+			width: 63px;
+			height: 61px;
+			line-height: 63px;
+
+			& a {
+				font-size: 1.1em;
+			}
+		}
+	}
+}
+.ContentGrid-items {
+	@media (min-width: 980px) {
+		margin-right: -16px;
+		
+		& .ContentGrid-block {
+			width: 33.333%;
+   			padding: 0 16px 0 0;
+		}
+	}
+}
+.dropdown {
+	@media (min-width: 980px) {
+
+		& .mainmenubtn {
+			display: none !important;
+		}
+		& .dropdown-child {
+			padding-left: 5%;
+  			display: flex !important;
+  			flex-flow: row wrap;
+  			background-color: #303030 !important;
+  			padding-right: 50px;
+  			justify-content: center;
+  			& a {
+  				padding: 10px 20px !important;
+  				font-size: 13px;
+  			}
+		}
+	}
+}
+ header .branding {
+	@media (min-width: 980px) {
+    	position: static !important;
+    	width: 240px !important;
+    	min-width: 230px !important;
+    	height: 40px !important;
+
+			& span:first-child {
+				font-size: 1.3em;
+			}
+			& span:last-child {
+				font-size: 1em  !important;
+			}
+  		}
+	}
+	.main-juniors {
+		@media (min-width: 980px) {
+
+			& p {
+				font-size: 1.5rem !important;
+				width: 80%;
+			}
+			& h1 {
+
+				& span {
+					font-size: 6.125rem !important;
+				}
+			}
+		}
+	}
+
+	.main-info {
+		@media (min-width: 980px) {
+
+		&	h1 > span {
+				font-size: 4rem;
+			}
+		}
+			.main-buttons {
+				padding-top: 5%;
+		    max-width: 960px;
+		    margin-left: auto;
+		    margin-right: auto;
+			}
+		}

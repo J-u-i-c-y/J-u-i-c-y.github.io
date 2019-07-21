@@ -1,0 +1,63 @@
+.nav {
+	@media (min-width: 560px) and (max-width: 739px) {
+		min-width: 739px !important;
+	}
+}
+.main-info {
+	@media (min-width: 560px) and (max-width: 739px) {
+		padding: 25vh 0;
+	}
+	& h1 > span {
+		@media (min-width: 560px) and (max-width: 979px) {
+			font-size: 3rem;
+		}
+	}
+}
+.main-buttons {
+	@media (min-width: 560px) and (max-width: 739px) {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.main-content div {
+	@media (min-width: 560px) and (max-width: 739px) {
+		& h1 {
+			font-size: 3em;
+		}
+		& p {
+			font-size: 1.1em;
+		}
+		& .box-container .box {
+			width: 63px;
+			height: 61px;
+			line-height: 63px;
+
+			& a {
+				font-size: 1.1em;
+			}
+		}
+	}
+}
+.main-admissions {
+	& .box-container {
+		& .box {
+			@media (min-width: 560px) and (max-width: 739px) {
+				width: 63px;
+				height: 61px;
+				line-height: 61px;
+			}
+		}
+	}
+}
+.ContentGrid-items {
+	@media (min-width: 560px) and (max-width: 979px) {
+		margin-right: -16px;
+		
+		& .ContentGrid-block {
+			width: 50%;
+   			padding: 0 16px 0 0;
+		}
+	}
+}
+
+

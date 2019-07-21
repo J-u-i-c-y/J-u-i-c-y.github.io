@@ -1,0 +1,141 @@
+header {
+	text-align: center;
+	position: relative;
+	width: 100%;
+
+		& .header-panel {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px;
+
+		& .search-box {
+				min-height: 34px;
+				width: 80%;
+		    position: absolute;
+		    top:10px;
+		    line-height: 34px;
+		    text-align: start;
+
+		    & label {
+		    	border: 1px solid #e1e1e1;
+			    background: #f4f4f4;
+			    border-radius: 3px;
+			    padding: 7px 10px;
+		    }
+		    &  .search-box__input {
+		    	position: absolute;
+		    	max-height: 34px;
+			    outline: none;
+			    vertical-align: top;
+			    display: none;
+			    color: #555;
+			    top: 0;
+			    left: 30px;
+		    }
+		    & .search-box__btn {
+		    	border: 0;
+		    	padding: 5px;
+		    }
+		    & .search-box__btn:checked  + .search-box__input {
+		    	display: block;
+		    	z-index: 2;
+					font: inherit;
+		   		margin: 0;
+		   		width: 93%;
+		   		border: 1px solid #e1e1e1;
+			    background: #f4f4f4;
+			    border-radius: 3px;
+		    }
+		}
+
+		& .nav-menu {
+			display: none;
+			width: 110%;
+			border-top: 1px solid #ddd;
+			padding-top: 10px;
+		    margin-left: -40px;
+		    margin-right: -40px;
+		    padding-left: 40px;
+		    padding-right: 40px;
+		    font-family: "PT Sans";
+		    text-transform: uppercase;
+
+			& .nav__item {
+				padding: 5px 0;
+				display: inline-block;
+				font-size: 0.875rem;
+				display: inline-block;
+				margin: 0 10px;
+				color: #000;
+			}
+
+			& .nav__item:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	& .branding {
+		position: relative;
+		left:40%;
+		width: 148px;
+    height: 30px;
+    display: inline-block;
+    font-family: "Droid Sans";
+	}
+	& .branding span:first-child {
+		text-transform: uppercase;
+		color: #000;
+	}
+	& .branding span:last-child {
+		font-size: .7em;
+		color: #8c7474;
+	}
+	& .burger {
+		right: 10px;
+
+		& .nav-burger {
+			display: block;
+			width: 25px;
+			height: 23px;
+			background-image: url(../../public/images/bars.svg);
+		}
+		& .nav-burger__checkbox:checked + .nav-burger {
+			background-image: url(../../public/images/cross.svg);
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: 4px;
+
+			~ .nav {
+			display: flex;
+			}
+		}
+		& .nav {
+			flex-flow: column nowrap;
+			min-width: 560px;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 25;
+			display: none;
+
+			& .nav__item {
+				min-height: 50px;
+				height: 20%;
+			    left: 0;
+				color: #000;
+				padding: 0 20px;
+				line-height: 180px;
+			    text-align: start;
+			    text-transform: uppercase;
+			    background-color: #fff;
+			    border-top: 1px solid #e6e6e6;
+			}
+			& .nav__item:last-child {
+				background-color: #3a3a3a;
+				height: 140px;
+			}
+		}
+	}
+
+}
