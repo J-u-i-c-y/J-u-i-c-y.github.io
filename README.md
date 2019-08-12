@@ -8,4 +8,4 @@
 [StarWars Library](https://J-u-i-c-y.github.io/SW/index.html)
 
 ## Little projects
-[Text editor of notes with tags](https://J-u-i-c-y.github.io/Little%20projects/Project%201/index.html)
+[Text editor of notes with tags](https://J-u-i-c-y.github.io/Project%201/index.html)
