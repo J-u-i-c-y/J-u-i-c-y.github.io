@@ -6,3 +6,6 @@
 
 ## Project API
 [StarWars Library](https://J-u-i-c-y.github.io/SW/index.html)
+
+## Little projects
+[Text editor of notes with tags](https://github.com/J-u-i-c-y/J-u-i-c-y.github.io/blob/master/Litle%20projects/Project%201/index.html)
