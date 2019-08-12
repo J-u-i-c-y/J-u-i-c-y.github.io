@@ -1,0 +1,39 @@
+.wraper {
+	padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px;
+}
+
+textarea {
+	max-width: 100%;
+    border-radius: 3px;
+    min-width: 100%;
+}
+
+.comment {
+	text-align: center;
+}
+
+.newComent {
+	border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+}
+
+p {
+	padding: 10px;
+	margin: 0;
+}
+
+span {
+	display: block;
+    margin: 10px;
+}
+
+ul, ol, li {
+	list-style-type: none;
+	padding: 0;
+	margin: 5px;
+}
