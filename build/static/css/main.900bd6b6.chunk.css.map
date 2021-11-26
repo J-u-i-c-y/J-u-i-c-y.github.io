@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,UACE,iBAAkB,CAClB,WACF,CAEA,yDACE,iBACF","file":"main.900bd6b6.chunk.css","sourcesContent":[".ant-form {\n  margin: 100px auto;\n  width: 500px;\n}\n\n.ant-form-item-control-input-content button[type=\"submit\"]{\n  margin-right: 10px;\n}"]}
