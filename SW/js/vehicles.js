@@ -7,7 +7,7 @@ menu.push(
 );
 
 // функция для рендера списка транспорта
-function renderVehicles(url = 'https://swapi.co/api/vehicles/') {
+function renderVehicles(url = 'https://swapi.info/api/vehicles/') {
     $('.main-content > div').hide();
     $('.page-content').show().css('display', 'flex');
     $('.breadcrumbs').show().css('display', 'inline');

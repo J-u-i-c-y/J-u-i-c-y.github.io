@@ -7,7 +7,7 @@ menu.push(
 );
 
 // функция для рендера списка персонажей
-function renderCharacters(url = 'https://swapi.dev/api/people/') {
+function renderCharacters(url = 'https://swapi.info/api/people/') {
   $('.main-content > div').hide();
   $('.page-content').show().css('display', 'flex');
   $('.breadcrumbs').show().css('display', 'inline');

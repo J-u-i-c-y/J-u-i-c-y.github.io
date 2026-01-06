@@ -7,7 +7,7 @@ menu.push(
 );
 
 // функция для рендера списка фильмов
-function renderStarships(url = 'https://swapi.co/api/starships/') {
+function renderStarships(url = 'https://swapi.info/api/starships/') {
     $('.main-content > div').hide();
     $('.page-content').show().css('display', 'flex');
     $('.breadcrumbs').show().css('display', 'inline');
