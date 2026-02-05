@@ -169,12 +169,15 @@ a {
 }
 
 .name, .filmsName {
-	width: 150px;
-	height: 200px;
-	background-color: blue;
-	margin: 20px;
-	position:relative;
-	border-radius: 3px;
+    width: 150px;
+    height: 200px;
+    background-color: blue;
+    background-image: url(https://images.prom.ua/2523788936_w640_h640_vafelnaya-kartinka-zvezdnye.jpg);
+    margin: 20px;
+    background-size: 100% 76%;
+    position: relative;
+    border-radius: 3px;
+    background-repeat: no-repeat;
 }
 .name > span, .filmsName > span {
 	width: inherit;
@@ -237,7 +240,7 @@ a {
 	padding-top: 5px;
 	padding-left: 20px;
 	display: block;
-	font-family: ;
+	font-family: Biko_Regular;
 	font-size: 0.9em;
 	color: grey;
 }

@@ -7,7 +7,7 @@ menu.push(
 );
 
 // функция для рендера списка планет
-function renderPlanets(url = 'https://swapi.info/api/planets/') {
+function renderPlanets(url = 'https://swapi.dev/api/planets/') {
     $('.main-content > div').hide();
     $('.page-content').show().css('display', 'flex');
     $('.breadcrumbs').show().css('display', 'inline');

@@ -31,7 +31,7 @@ function renderItemDescriptionDataReady(content) {
 // создание блока описания
 function createItemDescriptionText(title, paramsArray) {
     var image = document.createElement('img');
-    // image.src = "https://upload.wikimedia.org/wikipedia/ru/thumb/4/43/Luke_skywalker.jpg/250px-Luke_skywalker.jpg";
+        image.src = "https://images.prom.ua/2523788936_w640_h640_vafelnaya-kartinka-zvezdnye.jpg";
         image.classList.add('image');   ////  див с фото
         image.id = "img";
     var container = document.createElement('div');

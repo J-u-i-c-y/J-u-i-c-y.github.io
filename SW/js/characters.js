@@ -19,25 +19,29 @@ function renderCharacters(url = 'https://swapi.info/api/people/') {
 
 // создание страницы с подробной информацией по персонажам
 function createItemDescriptionPeople(itemData, renderItemDescriptionDataReady) {
-  var container = document.createElement('div');
-  container.classList.add('desc');  /// первый див в page-cpntent
-  var requests = [
-    $.get(itemData.homeworld),
-    ...itemData.species.map(species => $.get(species))
+  const container = document.createElement('div');
+  container.classList.add('desc');
+
+  const requests = [
+    fetch(itemData.homeworld).then(r => r.json()),
+    ...(itemData.species ?? []).map(url =>
+      fetch(url).then(r => r.json())
+    )
   ];
 
-  var speciesNames = [];
-  var homeworld = { title: '', data: '' };
+  Promise.all(requests)
+    .then(([homeworldData, ...speciesData]) => {
 
-  $.when(...requests).then(
-    (homeworldResponse, ...speciesResponses) => {
-      console.log(homeworldResponse, speciesResponses);
-      homeworld = { title: homeworldResponse[0].name, data: homeworldResponse[0] };
-      speciesNames = speciesResponses.map(
-        ([response, state], index) => {
-          return { title: response.name, data: response };
-        }
-      )
+      const homeworld = {
+        title: homeworldData?.name || '',
+        data: homeworldData || null
+      };
+
+      const speciesNames = speciesData.map(sp => ({
+        title: sp?.name || '',
+        data: sp || null
+      }));
+
       console.log(homeworld, speciesNames);
 
       var descriptionParams = [
@@ -56,9 +60,12 @@ function createItemDescriptionPeople(itemData, renderItemDescriptionDataReady) {
       container.append(renderRelated('Starships', itemData.starships, 'related-starships'));
       container.append(renderRelated('Vehicles', itemData.vehicles, 'related-vehicles'));
 
-      renderItemDescriptionDataReady(container);
-    }
-  )
+      renderItemDescriptionDataReady(container, {
+        homeworld,
+        species: speciesNames
+      });
+    })
+    .catch(err => {
+      console.error('Ошибка загрузки данных:', err);
+    });
 }
-
-

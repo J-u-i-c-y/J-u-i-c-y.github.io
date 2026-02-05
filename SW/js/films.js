@@ -7,7 +7,7 @@ menu.push(
 );
 
 // функция для рендера списка фильмов
-function renderFilms(url = 'https://swapi.info/api/films') {
+function renderFilms(url = 'https://swapi.dev/api/films') {
     $('.main-content > div').hide();
     $('.page-content').show().css('display', 'flex');
     $('.breadcrumbs').show().css('display', 'inline');

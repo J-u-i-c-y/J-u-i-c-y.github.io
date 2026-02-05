@@ -7,7 +7,7 @@ menu.push(
 );
 
 // функция для рендера списка фильмов
-function renderSpecies(url = 'https://swapi.info/api/species') {
+function renderSpecies(url = 'https://swapi.dev/api/species') {
     $('.main-content > div').hide();
     $('.page-content').show().css('display', 'flex');
     $('.breadcrumbs').show().css('display', 'inline');
